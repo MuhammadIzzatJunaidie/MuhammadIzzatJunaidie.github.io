@@ -1,2 +1,3 @@
 # MuhammadIzzatJunaidie.github.io
-About Izzat
+
+:theme: jekyll-theme-minimal
