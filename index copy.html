@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Izzat's Portfolio</title>
+  <!-- Link to custom font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Apply custom font to the entire body */
+    body {
+      font-family: 'Montserrat Alternates', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+  <nav class="bg-white text-black py-2 w-screen" style="position: fixed;">
+    <ul class="flex justify-center space-x-10  px-10">
+        <li><a href="/index copy.html#about" class="hover:text-gray-300">About</a></li>
+        <li><a href="/index copy.html#projects" class="hover:text-gray-300">Projects</a></li>
+        <li><a href="/index copy.html#contact" class="hover:text-gray-300">Contact</a></li>
+    </ul>
+</nav>
+  <main id="main" class="flex justify-center items-center">
+    <div class="flex flex-col mt-40 justify-center items-center">
+      <h2 class="text-8xl font-bold mb-4">Hi, I'm Izzat</h2>
+      <p class="mb-4">I am a year 2 Computer Science Undergraduate at Singapore Management University</p>
+      <img src="media/Background.png" style="height: auto ; width: 300px;">
+    </div>
+  </main>
+  <div id="about" class="flex flex-col justify-start h-screen mx-auto bg-red-200">
+    <h2 class="text-6xl font-bold px-20 pt-40">Hello, I am Izzat!</h2>
+    <div class="flex flex-row">
+      <div class="text-start p-20" style="max-width: 55rem;">
+        <p class="pb-4">I am currently in my second year pursuing a Bachelor's degree in Computer
+          Science at Singapore Management University.
+          With a fervent interest in software development and UI/UX design, I am deeply committed to refining my skills
+          and expanding my knowledge in these domains. </p>
+        <p class="pb-4">
+          Beyond my academic endeavors, I actively engage in extracurricular activities such as football and leadership
+          roles within my school's Malay Language and Cultural Club.
+          These experiences not only complement my coursework but also challenge me to grow personally and
+          professionally.
+        </p>
+        <p>
+          I am enthusiastic about my journey in the field of computer science and am eager to leverage my skills to
+          contribute meaningfully to the communities I am passionate about.
+        </p>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <div class="text-4xl text-center underline">
+          Skills
+        </div>
+        <div class="flex grid grid-cols-3 gap-5 px-10 pb-20 pt-10">
+          <div class="flex border border-black justify-center items-center"
+            style="height: 70px; width: 150px; border-radius: 10px; background-color: #F7EDE2;">
+            HTML + CSS
+          </div>
+          <div class="flex border border-black justify-center items-center"
+            style="height: 70px; width: 150px; border-radius: 10px; background-color: #F7EDE2;">
+            Java
+          </div>
+          <div class="flex border border-black justify-center items-center"
+            style="height: 70px; width: 150px; border-radius: 10px; background-color: #F7EDE2;">
+            C
+          </div>
+          <div class="flex border border-black justify-center items-center"
+            style="height: 70px; width: 150px; border-radius: 10px; background-color: #F7EDE2;">
+            Python
+          </div>
+          <div class="flex border border-black justify-center items-center"
+            style="height: 70px; width: 150px; border-radius: 10px; background-color: #F7EDE2;">
+            SQL
+          </div>
+          <div class="flex border border-black justify-center items-center"
+            style="height: 70px; width: 150px; border-radius: 10px; background-color: #F7EDE2;">
+            Figma
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div id="projects" class="flex flex-col mx-auto justify-center bg-yellow-200">
+    <h2 class="text-7xl font-bold text-center pt-20 pb-10 underline font-bold">My projects</h2>
+    <div class="bg-yellow-200" style="height: 40rem;">
+      <div class="flex justify-between h-full">
+        <div class=" flex flex-col justify-center items-start w-1/2 h-full ml-10">
+          <h2 class="text-8xl font-bold"> DiaLet's</h2>
+          <div>
+            <p class="text-xl my-10">Overcoming language barriers between generation by providing a one-stop language
+              application. </p>
+            <p>Project type: End to end app</p>
+            <p>Tools: Figma </p>
+            <a href="/DiaLet's.html"><button class="border border-black my-10"
+              style="height: 50px; width: 200px; border-radius: 10px; background-color: #bfdbfe;"> View
+              Project </button></a>
+          </div>
+        </div>
+        <div class=" flex w-1/2 h-full justify-center">
+          <img src="/media/DiaLet's.png" class="p-20">
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-blue-200" style="height: 40rem;">
+      <div class="flex justify-between h-full">
+        <div class=" flex w-1/2 h-full justify-center items-center">
+          <img src="/media//ToTheCloset.png" class="" style="height: 350px; width: auto;">
+        </div>
+        <div class=" flex flex-col justify-center items-start w-1/2 h-full ml-10">
+          <h2 class="text-8xl font-bold"> To The Closet</h2>
+          <div class="">
+            <p class="text-xl my-10">Website that makes renting high-end designer clothes affordable. </p>
+            <p>Project type: End to end website</p>
+            <p>Tools: Figma, ReactJS, Typescript, AWS, Python, Vercel </p>
+            <a href="/ToTheCloset.html"><button class="border border-black my-10"
+                style="height: 50px; width: 200px; border-radius: 10px; background-color: #bbf7d0;"> View
+                Project </button></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-green-200" style="height: 40rem;">
+      <div class="flex justify-between h-full">
+        <div class=" flex flex-col justify-center items-start w-1/2 h-full ml-10">
+          <h2 class="text-8xl font-bold"> Link</h2>
+          <div class="">
+            <p class="text-xl my-10">Enhancing the dating app experience by prioritizing free transparency, offering a
+              more refined matching process. </p>
+            <p>Project type: End to end app</p>
+            <p>Tools: Figma, Flutter</p>
+            <a href="/Link.html"><button class="border border-black my-10"
+              style="height: 50px; width: 200px; border-radius: 10px;  background-color: #fef08a;"> View
+              Project </button></a>
+
+          </div>
+        </div>
+        <div class=" flex w-1/2 h-full justify-center">
+          <img src="/media//Link.png" class="p-20">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="contact" class="flex flex-col mx-auto justify-start py-20 ">
+    <h2 class="text-6xl font-bold px-20 underline">Contact me</h2>
+    <div class="px-20 pt-20 text-xl">
+      <p>Singapore</p>
+      <p>Phone: +65 9367 6909</p>
+      <p>Email: muhammadizzatjunaidie@gmail.com</p>
+      <p>Linkedin: linkedin.com/in/muhammadizzatjunaidie</p>
+    </div>
+  </div>
+
+
+
+
+
+
+  <footer class="bg-white py-4 text-center">
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
