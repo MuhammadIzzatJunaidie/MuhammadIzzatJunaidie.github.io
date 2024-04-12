@@ -19,8 +19,8 @@
 </head>
 
 <body>
-    <nav class="bg-white text-black py-2 w-screen" style="position: fixed;">
-        <ul class="flex justify-center space-x-10  px-10">
+    <nav class="bg-white text-black py-2 w-full" style="position: fixed;">
+        <ul class="flex justify-center space-x-10 px-10">
             <li><a href="https://muhammadizzatjunaidie.github.io/#about" class="hover:text-gray-300">About</a></li>
             <li><a href="https://muhammadizzatjunaidie.github.io/#projects" class="hover:text-gray-300">Projects</a>
             </li>
@@ -28,25 +28,25 @@
         </ul>
     </nav>
 
-    <main id="main" class="flex justify-center h-screen" style="background-color: #bbf7d0;">
-        <div class="w-screen mt-20">
-            <div class="flex justify-between items-center">
-                <div class="flex justify-center items-center w-1/2">
-                    <video style="height: auto ; width: 550px;" autoplay loop>
-                        <source src="media/Link.mp4" type="video/mp4">
-                    </video>
+    <main id="main" class="flex flex-col justify-center min-h-screen" style="background-color: #bbf7d0;">
+        <div class="w-full">
+            <div class="flex flex-col lg:flex-row justify-between items-center">
+                    <div class="flex justify-center items-center mt-20 w-full lg:w-1/2">
+                        <video style="height: auto; max-width: 75%;" autoplay loop> 
+                            <source src="/media/Link.mp4" type="video/mp4">
+                        </video>
                 </div>
-                <div class="w-1/2 flex flex-col items-center text-center pr-20">
+                <div class="w-full p-10 lg:w-1/2 flex flex-col items-center text-center justify-center lg:pr-20 h-full">
                     <h2 class="text-4xl font-bold">Link</h2>
-                    <p>Enhancing the dating app experience by prioritizing free transparency, offering a
+                    <p class="mb-8">Enhancing the dating app experience by prioritizing free transparency, offering a
                         more refined matching process.</p>
-                    <div class="flex grid grid-cols-2 gap-5 mt-10">
-                        <div class="border border-black p-4" style="border-radius: 10px; background-color: #fef08a;">
+                    <div class="lg:grid lg:grid-cols-2 gap-5 mt-10">
+                        <div class="border border-black p-4 mb-5" style="border-radius: 10px; background-color: #fef08a;">
                             <h2 class="underline text-xl pb-3">Problem</h2>
-                            <p> Dating app users often struggle to find matches due to the barrier created by limited
+                            <p>Dating app users often struggle to find matches due to the barrier created by limited
                                 access to information behind paywalls.</p>
                         </div>
-                        <div class="border border-black p-4 " style="border-radius: 10px; background-color: #fef08a;">
+                        <div class="border border-black p-4 mb-5" style="border-radius: 10px; background-color: #fef08a;">
                             <h2 class="underline text-xl pb-3">Features</h2>
                             <ul>
                                 <li>Full information on other users</li>
@@ -54,8 +54,7 @@
                                 <li>Common starter warning</li>
                             </ul>
                         </div>
-                        <div class="border border-black p-4 col-span-2"
-                            style="border-radius: 10px; background-color: #fef08a;">
+                        <div class="border border-black p-4 col-span-2" style="border-radius: 10px; background-color: #fef08a;">
                             <h2 class="underline text-xl pb-3">Tools</h2>
                             <div class="flex grid grid-cols-2">
                                 <div>Figma</div>
@@ -68,16 +67,16 @@
 
         </div>
     </main>
-    <div class="flex justify-center items-center text-center text-2xl p-20 underline"
-    style="background-color: #bbf7d0;">
-        <a href="https://muhammadizzatjunaidie.github.io/">
-            <link>Back Home</link>
-        </a>
+
+    <div class="flex justify-center items-center text-center text-2xl p-20 underline w-full"
+        style="background-color:#bbf7d0;">
+        <a href="https://muhammadizzatjunaidie.github.io/">Back Home</a>
     </div>
-    <footer class="bg-white py-4 text-center">
+
+    <footer class="bg-white py-4 text-center fixed bottom-0 w-full">
         <p>&copy; 2024 My Website. All rights reserved.</p>
     </footer>
-    
+
 </body>
 
 </html>

@@ -10,78 +10,67 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Apply custom font to the entire body */
-        body {
-            font-family: 'Montserrat Alternates', sans-serif;
-        }
-    </style>
 </head>
 
-<body>
-    <nav class="bg-white text-black py-2 w-screen" style="position: fixed;">
-        <ul class="flex justify-center space-x-10  px-10">
+<body class="bg-blue-200">
+    <nav class="bg-white text-black py-2 w-screen fixed top-0 z-10">
+        <ul class="flex justify-center space-x-10 px-10">
             <li><a href="https://muhammadizzatjunaidie.github.io/#about" class="hover:text-gray-300">About</a></li>
             <li><a href="https://muhammadizzatjunaidie.github.io/#projects" class="hover:text-gray-300">Projects</a></li>
             <li><a href="https://muhammadizzatjunaidie.github.io/#contact" class="hover:text-gray-300">Contact</a></li>
         </ul>
     </nav>
 
-    <main id="main" class="flex justify-center h-screen" style="background-color: #bfdbfe;">
-        <div class="w-screen flex items-center">
-            <div class="flex justify-between items-center">
-                <div class="w-1/2 h-full">
-                    <video class="ml-20 " style="height: auto ; width: 600px;" autoplay loop>
-                        <source src="media/To the Closet.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="w-1/2 flex flex-col items-center text-center justify-center pr-20 h-full">
-                    <h2 class="text-4xl font-bold">To The Closet</h2>
-                    <p>Website that makes renting high-end designer clothes affordable.</p>
-                    <div class="flex grid grid-cols-2 gap-5 mt-10">
-                        <div class="border border-black p-4" style="border-radius: 10px; background-color: #bbf7d0;">
-                            <h2 class="underline text-xl pb-3">Problem</h2>
-                            <p> It is expensive to purchase high-end designer fashion which is usually only worn once.
-                            </p>
+    <main class="flex justify-center min-h-screen pt-16">
+        <div class="w-full lg:w-screen flex flex-col lg:flex-row justify-between items-center bg-blue-200 p-10 ">
+            <div class="w-full lg:w-1/2">
+                <video class="mb-5 lg:ml-10" style="height: auto; width: 650px;" autoplay loop>
+                    <source src="media/To the Closet.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="w-full lg:w-1/2 flex flex-col items-center text-center justify-center px-4 lg:px-20">
+                <h2 class="text-4xl font-bold">To The Closet</h2>
+                <p class="mb-8">Website that makes renting high-end designer clothes affordable.</p>
+                <div class="lg:grid lg:grid-cols-2 gap-5">
+                    <div class="border border-black p-4 rounded-lg bg-green-200 mb-5">
+                        <h2 class="underline text-xl pb-3">Problem</h2>
+                        <p> It is expensive to purchase high-end designer fashion which is usually only worn once.
+                        </p>
+                    </div>
+                    <div class="border border-black p-4 rounded-lg bg-green-200 mb-5">
+                        <h2 class="underline text-xl pb-3">Features</h2>
+                        <ul>
+                            <li>Extensive Catalog</li>
+                            <li>Product Filtering</li>
+                            <li>AI Image Search</li>
+                            <li>Fashion Rental</li>
+                            <li>Reviews</li>
+                        </ul>
+                    </div>
+                    <div class="border border-black p-4 rounded-lg bg-green-200 col-span-2">
+                        <h2 class="underline text-xl pb-3">Tools</h2>
+                        <div class="grid grid-cols-3 gap-y-5">
+                            <div>Figma</div>
+                            <div>ReactJS</div>
+                            <div>Typescript</div>
+                            <div>AWS</div>
+                            <div>Python</div>
+                            <div>Vercel</div>
                         </div>
-                        <div class="border border-black p-4 " style="border-radius: 10px; background-color: #bbf7d0; ">
-                            <h2 class="underline text-xl pb-3">Features</h2>
-                            <ul>
-                                <li>Extensive Catalog</li>
-                                <li>Product Filtering</li>
-                                <li>AI Image Search</li>
-                                <li>Fashion Rental</li>
-                                <li>Reviews</li>
-                            </ul>
-                        </div>
-                        <div class="border border-black p-4 col-span-2" style="border-radius: 10px; background-color: #bbf7d0;">
-                            <h2 class="underline text-xl pb-3">Tools</h2>
-                            <div class="flex grid grid-cols-3 gap-y-5">
-                                <div>Figma</div>
-                                <div>ReactJS</div>
-                                <div>Typescript</div>
-                                <div>AWS</div>
-                                <div>Python</div>
-                                <div>Vercel</div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
         </div>
-         
     </main>
+
     <div class="flex justify-center items-center text-center text-2xl p-20 underline"
-    style="background-color:#bfdbfe;">
-        <a href="https://muhammadizzatjunaidie.github.io/">
-            <link>Back Home</link>
-        </a>
+        style="background-color:#bfdbfe;">
+        <a href="https://muhammadizzatjunaidie.github.io/">Back Home</a>
     </div>
-    <footer class="bg-white py-4 text-center">
+
+    <footer class="bg-white py-4 text-center fixed bottom-0 w-full">
         <p>&copy; 2024 My Website. All rights reserved.</p>
-      </footer>
-    
+    </footer>
 </body>
 
 </html>

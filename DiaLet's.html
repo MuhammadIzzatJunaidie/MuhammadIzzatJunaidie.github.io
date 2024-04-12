@@ -20,7 +20,7 @@
 
 <body>
     <nav class="bg-white text-black py-2 w-screen" style="position: fixed;">
-        <ul class="flex justify-center space-x-10  px-10">
+        <ul class="flex justify-center space-x-10 px-10">
             <li><a href="https://muhammadizzatjunaidie.github.io/#about" class="hover:text-gray-300">About</a></li>
             <li><a href="https://muhammadizzatjunaidie.github.io/#projects" class="hover:text-gray-300">Projects</a>
             </li>
@@ -28,25 +28,28 @@
         </ul>
     </nav>
 
-    <main id="main" class="flex flex-col justify-center h-screen" style="background-color: #fef08a;">
-        <div class="w-screen mt-20">
-            <div class="flex justify-between items-center">
-                <div class="flex justify-center items-center w-1/2">
-                    <video style="height: auto ; width: 550px;" autoplay loop>
+    <main id="main" class="flex flex-col justify-center min-h-screen" style="background-color: #fef08a;">
+        <div class="w-full">
+            <div class="flex flex-col lg:flex-row justify-between items-center">
+                <!-- Video above text for small screens -->
+                <div class="flex justify-center items-center mt-20 w-full lg:w-1/2">
+                    <video style="height: auto; max-width: 75%;" autoplay loop>
                         <source src="/media/DiaLet's.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="w-1/2 flex flex-col items-center text-center justify-center pr-20 h-full">
+                <div class="w-full p-10 lg:w-1/2 flex flex-col items-center text-center justify-center lg:pr-20 h-full">
                     <h2 class="text-4xl font-bold">DiaLet's</h2>
-                    <p>Overcoming language barriers between generation by providing a one-stop language
-                        application.</p>
-                    <div class="flex grid grid-cols-2 gap-5 mt-10">
-                        <div class="border border-black p-4" style="border-radius: 10px; background-color: #bfdbfe;">
-                            <h2 class="underline text-xl pb-3">Problem</h2>
-                            <p> The younger generation finds it difficult to communicate with their elderly loved ones
-                                as they do not speak the same dialect. </p>
+                    <p class="mb-8">Overcoming language barriers between generations by providing a one-stop language application.
+                    </p>
+                    <div class="lg:grid lg:grid-cols-2 gap-5">
+                        <div class="border border-black p-4 mb-5"
+                            style="border-radius: 10px; background-color: #bfdbfe;">
+                            <h2 class="underline text-xl pb-3 mb-5">Problem</h2>
+                            <p>The younger generation finds it difficult to communicate with their elderly loved ones as
+                                they do not speak the same dialect.</p>
                         </div>
-                        <div class="border border-black p-4 " style="border-radius: 10px; background-color: #bfdbfe;">
+                        <div class="border border-black p-4 mb-5"
+                            style="border-radius: 10px; background-color: #bfdbfe;">
                             <h2 class="underline text-xl pb-3">Features</h2>
                             <ul>
                                 <li>Word of the day</li>
@@ -61,24 +64,23 @@
                             <h2 class="underline text-xl pb-3">Tools</h2>
                             <ul>
                                 <li>Figma</li>
+                            </ul>
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </div>
-
     </main>
+
     <div class="flex justify-center items-center text-center text-2xl p-20 underline"
-        style="background-color: #fef08a;">
+        style="background-color:#fef08a;">
         <a href="https://muhammadizzatjunaidie.github.io/">Back Home</a>
     </div>
 
-    <footer class="bg-white py-4 text-center">
+    <footer class="bg-white py-4 text-center fixed bottom-0 w-full">
         <p>&copy; 2024 My Website. All rights reserved.</p>
     </footer>
-
 </body>
+
 
 </html>
