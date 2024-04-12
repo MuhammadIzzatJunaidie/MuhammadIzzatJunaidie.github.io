@@ -19,32 +19,64 @@
 </head>
 
 <body>
-    <nav class="bg-white text-black py-2 w-screen" style="position: fixed;">
-        <ul class="flex justify-center space-x-10 px-10">
-            <li><a href="https://muhammadizzatjunaidie.github.io/#about" class="hover:text-gray-300">About</a></li>
-            <li><a href="https://muhammadizzatjunaidie.github.io/#projects" class="hover:text-gray-300">Projects</a>
-            </li>
-            <li><a href="https://muhammadizzatjunaidie.github.io/#contact" class="hover:text-gray-300">Contact</a></li>
-        </ul>
+    <!-- Navigation Bar -->
+    <nav class="bg-white text-black py-2 w-screen">
+        <div class="flex justify-between px-10">
+            <div>
+                <a href="https://muhammadizzatjunaidie.github.io/" class="text-xl font-bold">Izzat's Portfolio</a>
+            </div>
+            <div class="lg:hidden">
+                <!-- Hamburger Menu Icon -->
+                <button id="hamburger-icon" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul class="hidden lg:flex justify-center space-x-10">
+                <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
+                <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Dropdown Menu -->
+        <div id="dropdown-menu" class="lg:hidden hidden px-10">
+            <ul class="flex flex-col items-end space-y-2">
+                <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
+                <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </div>
     </nav>
+
+    <script>
+        // JavaScript to toggle visibility of dropdown menu
+        document.getElementById('hamburger-icon').addEventListener('click', function () {
+            var dropdownMenu = document.getElementById('dropdown-menu');
+            dropdownMenu.classList.toggle('hidden');
+        });
+    </script>
 
     <main id="main" class="flex flex-col justify-center min-h-screen" style="background-color: #fef08a;">
         <div class="w-full">
             <div class="flex flex-col lg:flex-row justify-between items-center">
                 <!-- Video above text for small screens -->
-                <div class="flex justify-center items-center mt-20 w-full lg:w-1/2">
+                <div class="flex justify-center items-center mt-20 w-full lg:mt-0 lg:w-1/2">
                     <video style="height: auto; max-width: 75%;" autoplay loop>
                         <source src="/media/DiaLet's.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="w-full p-10 lg:w-1/2 flex flex-col items-center text-center justify-center lg:pr-20 h-full">
                     <h2 class="text-4xl font-bold">DiaLet's</h2>
-                    <p class="mb-8">Overcoming language barriers between generations by providing a one-stop language application.
+                    <p class="mb-8">Overcoming language barriers between generations by providing a one-stop language
+                        application.
                     </p>
                     <div class="lg:grid lg:grid-cols-2 gap-5">
                         <div class="border border-black p-4 mb-5"
                             style="border-radius: 10px; background-color: #bfdbfe;">
-                            <h2 class="underline text-xl pb-3 mb-5">Problem</h2>
+                            <h2 class="underline text-xl pb-3">Problem</h2>
                             <p>The younger generation finds it difficult to communicate with their elderly loved ones as
                                 they do not speak the same dialect.</p>
                         </div>
@@ -72,12 +104,11 @@
         </div>
     </main>
 
-    <div class="flex justify-center items-center text-center text-2xl p-20 underline"
-        style="background-color:#fef08a;">
+    <div class="flex justify-center items-center text-center text-2xl p-20 underline" style="background-color:#fef08a;">
         <a href="https://muhammadizzatjunaidie.github.io/">Back Home</a>
     </div>
 
-    <footer class="bg-white py-4 text-center fixed bottom-0 w-full">
+    <footer class="bg-white py-4 text-center w-full">
         <p>&copy; 2024 My Website. All rights reserved.</p>
     </footer>
 </body>

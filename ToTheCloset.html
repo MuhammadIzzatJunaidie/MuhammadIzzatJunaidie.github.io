@@ -13,13 +13,45 @@
 </head>
 
 <body class="bg-blue-200">
-    <nav class="bg-white text-black py-2 w-screen fixed top-0 z-10">
-        <ul class="flex justify-center space-x-10 px-10">
-            <li><a href="https://muhammadizzatjunaidie.github.io/#about" class="hover:text-gray-300">About</a></li>
-            <li><a href="https://muhammadizzatjunaidie.github.io/#projects" class="hover:text-gray-300">Projects</a></li>
-            <li><a href="https://muhammadizzatjunaidie.github.io/#contact" class="hover:text-gray-300">Contact</a></li>
-        </ul>
+    <!-- Navigation Bar -->
+    <nav class="bg-white text-black py-2 w-screen">
+        <div class="flex justify-between px-10">
+            <div>
+                <a href="https://muhammadizzatjunaidie.github.io/" class="text-xl font-bold">Izzat's Portfolio</a>
+            </div>
+            <div class="lg:hidden">
+                <!-- Hamburger Menu Icon -->
+                <button id="hamburger-icon" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul class="hidden lg:flex justify-center space-x-10">
+                <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
+                <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Dropdown Menu -->
+        <div id="dropdown-menu" class="lg:hidden hidden px-10">
+            <ul class="flex flex-col items-end space-y-2">
+                <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
+                <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </div>
     </nav>
+
+    <script>
+        // JavaScript to toggle visibility of dropdown menu
+        document.getElementById('hamburger-icon').addEventListener('click', function () {
+            var dropdownMenu = document.getElementById('dropdown-menu');
+            dropdownMenu.classList.toggle('hidden');
+        });
+    </script>
 
     <main class="flex justify-center min-h-screen pt-16">
         <div class="w-full lg:w-screen flex flex-col lg:flex-row justify-between items-center bg-blue-200 p-10 ">
@@ -68,7 +100,7 @@
         <a href="https://muhammadizzatjunaidie.github.io/">Back Home</a>
     </div>
 
-    <footer class="bg-white py-4 text-center fixed bottom-0 w-full">
+    <footer class="bg-white py-4 text-center w-full">
         <p>&copy; 2024 My Website. All rights reserved.</p>
     </footer>
 </body>
